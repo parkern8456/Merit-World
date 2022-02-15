@@ -1,0 +1,16 @@
+Converting GML script: ${project_dir}/scripts/scr_sprite_explode/scr_sprite_explode.gml
+Converted description /// @description scr_sprite_explode(Max Life, Min Life, Max Speed, Min Speed, Max Peice Size, Min Peice Size, Spin, Fade Out, Fade Amt, Fade To Color, End Color, Color Fade Speed, Implode);/// @param Max Life
+/// @param  Min Life
+/// @param  Max Speed
+/// @param  Min Speed
+/// @param  Max Peice Size
+/// @param  Min Peice Size
+/// @param  Spin
+/// @param  Fade Out
+/// @param  Fade Amt
+/// @param  Fade To Color
+/// @param  End Color
+/// @param  Color Fade Speed
+/// @param  Implode
+
+Updated compatibility script '__global_object_depths.gml'

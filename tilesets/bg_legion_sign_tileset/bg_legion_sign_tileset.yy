@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "bg_legion_sign",
+    "path": "sprites/bg_legion_sign/bg_legion_sign.yy",
+  },
+  "tileWidth": 48,
+  "tileHeight": 24,
+  "tilexoff": 0,
+  "tileyoff": 0,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "spriteNoExport": false,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "out_columns": 1,
+  "tile_count": 1,
+  "autoTileSets": [],
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileAnimation": {
+    "FrameData": [
+      0,
+    ],
+    "SerialiseFrameCount": 1,
+  },
+  "macroPageTiles": {
+    "SerialiseWidth": 0,
+    "SerialiseHeight": 0,
+    "TileSerialiseData": [],
+  },
+  "parent": {
+    "name": "MISC",
+    "path": "folders/Tile Sets/Tilesets/MISC.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "bg_legion_sign_tileset",
+  "tags": [],
+  "resourceType": "GMTileSet",
+}

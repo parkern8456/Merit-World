@@ -1,0 +1,1002 @@
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: ${project_dir}\scripts\scr_spawn_player\scr_spawn_player.gml
+Converted builtin - line 17: background_x[0] = global.checkX_BG_far -> __background_set( e__BG.X, 0, global.checkX_BG_far )
+Converted builtin - line 21: background_x[1] = global.checkX_BG -> __background_set( e__BG.X, 1, global.checkX_BG )
+Converted builtin - line 25: background_x[2] = global.checkX_BG_close -> __background_set( e__BG.X, 2, global.checkX_BG_close )
+Converted builtin - line 18: background_y[0] = 70 -> __background_set( e__BG.Y, 0, 70 )
+Converted builtin - line 22: background_y[1] = 189 -> __background_set( e__BG.Y, 1, 189 )
+Converted builtin - line 26: background_y[2] = 86 -> __background_set( e__BG.Y, 2, 86 )
+Converted description /// @description Respawn player after death (unless out of lives)/// @param unless out of lives
+
+Converting GML script: ${project_dir}\scripts\scr_sprite_explode\scr_sprite_explode.gml
+Converted description /// @description scr_sprite_explode(Max Life, Min Life, Max Speed, Min Speed, Max Peice Size, Min Peice Size, Spin, Fade Out, Fade Amt, Fade To Color, End Color, Color Fade Speed, Implode);/// @param Max Life
+/// @param  Min Life
+/// @param  Max Speed
+/// @param  Min Speed
+/// @param  Max Peice Size
+/// @param  Min Peice Size
+/// @param  Spin
+/// @param  Fade Out
+/// @param  Fade Amt
+/// @param  Fade To Color
+/// @param  End Color
+/// @param  Color Fade Speed
+/// @param  Implode
+
+Converting GML script: ${project_dir}\scripts\scr_camera_movement\scr_camera_movement.gml
+Converted builtin - line 30: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 42: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 55: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 35: view_xview = (x - (view_wview / 2)) -> __view_set( e__VW.XView, 0, (x - (view_wview / 2)) )
+Converted builtin - line 47: view_xview += random_range(-shake, shake) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (random_range(-shake, shake)) )
+Converted builtin - line 40: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 43: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 56: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 37: view_yview = (y - (view_hview / 2)) -> __view_set( e__VW.YView, 0, (y - (view_hview / 2)) )
+Converted builtin - line 48: view_yview += random_range(-shake, shake) -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (random_range(-shake, shake)) )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview = obj_display_manager.ideal_width / view_zoom -> __view_set( e__VW.WView, 0, obj_display_manager.ideal_width / view_zoom )
+Converted builtin - line 40: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 43: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 56: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview = obj_display_manager.ideal_height / view_zoom -> __view_set( e__VW.HView, 0, obj_display_manager.ideal_height / view_zoom )
+Converted builtin - line 30: view_xview = ceil(__view_get( e__VW.XView, 0 )) -> __view_set( e__VW.XView, 0, ceil(__view_get( e__VW.XView, 0 )) )
+Converted builtin - line 39: view_xview += (((x + xOffset)-(__view_get( e__VW.WView, 0 ) / 2)) - __view_get( e__VW.XView, 0 )) * 0.075 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + ((((x + xOffset)-(__view_get( e__VW.WView, 0 ) / 2)) - __view_get( e__VW.XView, 0 )) * 0.075) )
+Converted builtin - line 42: view_xview += (((checkX + xOffset)-(__view_get( e__VW.WView, 0 ) / 2)) - __view_get( e__VW.XView, 0 )) * 0.075 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + ((((checkX + xOffset)-(__view_get( e__VW.WView, 0 ) / 2)) - __view_get( e__VW.XView, 0 )) * 0.075) )
+Converted builtin - line 55: view_xview = clamp(__view_get( e__VW.XView, 0 ), 0, room_width-__view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ), 0, room_width-__view_get( e__VW.WView, 0 )) )
+Converted builtin - line 40: view_yview += (((y + yOffset) - (__view_get( e__VW.HView, 0 ) / 2)) - __view_get( e__VW.YView, 0 )) * 0.075 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + ((((y + yOffset) - (__view_get( e__VW.HView, 0 ) / 2)) - __view_get( e__VW.YView, 0 )) * 0.075) )
+Converted builtin - line 43: view_yview += (((checkY + yOffset) - (__view_get( e__VW.HView, 0 ) / 2)) - __view_get( e__VW.YView, 0 )) * 0.075 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + ((((checkY + yOffset) - (__view_get( e__VW.HView, 0 ) / 2)) - __view_get( e__VW.YView, 0 )) * 0.075) )
+Converted builtin - line 56: view_yview = clamp(__view_get( e__VW.YView, 0 ), 0, room_height-__view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ), 0, room_height-__view_get( e__VW.HView, 0 )) )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+
+!!! Font fnt_arcade uses a font (Arcadepix Plus) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fnt_arcade\fnt_arcade.gms1.png
+!!! Font fnt_type uses a font (C&C Red Alert [INET]) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fnt_type\fnt_type.gms1.png
+!!! Font fnt_text_lg uses a font (C&C Red Alert [INET]) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fnt_text_lg\fnt_text_lg.gms1.png
+Font fnt_level_intro_text has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fnt_level_intro_text\fnt_level_intro_text.gms1.png
+!!! Font fnt_countdown uses a font (Arcadepix Plus) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fnt_countdown\fnt_countdown.gms1.png
+Converting GML script: ${project_dir}\objects\obj_player\Create_0.gml
+Converted description /// @description Variable Declaration
+Converted string - line 44: 'A' -> "A"
+Converted string - line 47: 'D' -> "D"
+Converted string - line 50: 'P' -> "P"
+Converted string - line 51: 'H' -> "H"
+Converted string - line 52: 'G' -> "G"
+Converted string - line 55: 'M' -> "M"
+
+Converting GML script: ${project_dir}\objects\obj_player\Alarm_2.gml
+Converted description /// @description Game Start Countdown timer
+
+Converting GML script: ${project_dir}\objects\obj_player\Alarm_1.gml
+Converted description /// @description Respawn player after 2 sec delay
+
+Converting GML script: ${project_dir}\objects\obj_player\Step_0.gml
+Converted builtin - line 371: background_x[0] = view_xview/1.0 -> __background_set( e__BG.X, 0, view_xview/1.0 )
+Converted builtin - line 375: background_x[1] = view_xview/1.1 -> __background_set( e__BG.X, 1, view_xview/1.1 )
+Converted builtin - line 379: background_x[2] = view_xview/1.3 -> __background_set( e__BG.X, 2, view_xview/1.3 )
+Converted builtin - line 383: background_x[3] = view_xview/1.4 -> __background_set( e__BG.X, 3, view_xview/1.4 )
+Converted builtin - line 387: background_x[4] = view_xview/1.5 -> __background_set( e__BG.X, 4, view_xview/1.5 )
+Converted builtin - line 413: background_x[0] = 0 -> __background_set( e__BG.X, 0, 0 )
+Converted builtin - line 417: background_x[1] = 0 -> __background_set( e__BG.X, 1, 0 )
+Converted builtin - line 421: background_x[2] = 0 -> __background_set( e__BG.X, 2, 0 )
+Converted builtin - line 425: background_x[3] = 0 -> __background_set( e__BG.X, 3, 0 )
+Converted builtin - line 429: background_x[4] = 0 -> __background_set( e__BG.X, 4, 0 )
+Converted builtin - line 372: background_y[0] = view_yview/1.0 - 48 -> __background_set( e__BG.Y, 0, view_yview/1.0 - 48 )
+Converted builtin - line 376: background_y[1] = view_yview/1.0 + 151 -> __background_set( e__BG.Y, 1, view_yview/1.0 + 151 )
+Converted builtin - line 380: background_y[2] = view_yview/1.0 + 128 -> __background_set( e__BG.Y, 2, view_yview/1.0 + 128 )
+Converted builtin - line 384: background_y[3] = view_yview/1.05 + 116 -> __background_set( e__BG.Y, 3, view_yview/1.05 + 116 )
+Converted builtin - line 388: background_y[4] = view_yview/1.1 + 16 -> __background_set( e__BG.Y, 4, view_yview/1.1 + 16 )
+Converted builtin - line 414: background_y[0] = (room_height - obj_display_manager.ideal_height) - 48 -> __background_set( e__BG.Y, 0, (room_height - obj_display_manager.ideal_height) - 48 )
+Converted builtin - line 418: background_y[1] = (room_height - obj_display_manager.ideal_height) + 151 -> __background_set( e__BG.Y, 1, (room_height - obj_display_manager.ideal_height) + 151 )
+Converted builtin - line 422: background_y[2] = (room_height - obj_display_manager.ideal_height) + 128 -> __background_set( e__BG.Y, 2, (room_height - obj_display_manager.ideal_height) + 128 )
+Converted builtin - line 426: background_y[3] = (room_height - obj_display_manager.ideal_height) / 1.05 + 116 -> __background_set( e__BG.Y, 3, (room_height - obj_display_manager.ideal_height) / 1.05 + 116 )
+Converted builtin - line 430: background_y[4] = (room_height - obj_display_manager.ideal_height) / 1.1 + 16 -> __background_set( e__BG.Y, 4, (room_height - obj_display_manager.ideal_height) / 1.1 + 16 )
+Converted description /// @description Sound and Pause Control
+Converted string - line 4: 'M' -> "M"
+Converted string - line 16: 'G' -> "G"
+Converted string - line 16: 'H' -> "H"
+Converted string - line 16: 'P' -> "P"
+Converted string - line 21: 'P' -> "P"
+Converted string - line 40: 'D' -> "D"
+Converted string - line 41: 'A' -> "A"
+Converted builtin - line 371: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 375: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 379: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 383: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 387: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 372: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 376: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 380: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 384: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 388: view_yview -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_player\Collision_813da0d8-7ad6-4414-8327-0feb8d0e5d80.gml
+Converted description /// @description Crossing the finish line
+
+Converting GML script: ${project_dir}\objects\obj_player\Collision_ceb03cfe-8629-4e8f-8d4e-227d43313adc.gml
+Converted description /// @description Spike Interactions
+
+Converting GML script: ${project_dir}\objects\obj_player\Collision_8dd6b834-8187-4a94-9827-ab62b8538b9f.gml
+Converted description /// @description Water Interactions
+
+Converting GML script: ${project_dir}\objects\obj_player\Other_0.gml
+Converted description /// @description Kill Player if beyond room boundaries
+
+Converting GML script: ${project_dir}\objects\obj_player\Draw_64.gml
+Converted description /// @description Draw GUI elements (Score/Controls)/// @param Score/Controls
+Converted string - line 147: 'P' -> "P"
+Converted string - line 150: 'P' -> "P"
+Converted string - line 160: 'M' -> "M"
+Converted string - line 163: 'M' -> "M"
+Converted string - line 167: 'M' -> "M"
+Converted string - line 170: 'M' -> "M"
+
+Converting GML script: ${project_dir}\objects\obj_player\KeyPress_27.gml
+Converted description /// @description Quit the demo.
+
+Converting GML script: ${project_dir}\objects\obj_display_manager\Create_0.gml
+Converted description /// @description Display Properties
+
+Converting GML script: ${project_dir}\objects\obj_splash_controller\Create_0.gml
+Converted description /// @description Fade sprite variable -- sound to true
+
+Converting GML script: ${project_dir}\objects\obj_splash_controller\Alarm_0.gml
+Converted description /// @description Start Fade
+
+Converting GML script: ${project_dir}\objects\obj_splash_controller\Step_0.gml
+Converted description /// @description Draw sprite and fade in and out
+
+Converting GML script: ${project_dir}\objects\obj_splash_controller\Draw_64.gml
+Converted description /// @description Draw logo
+
+Converting GML script: ${project_dir}\objects\obj_pause\Create_0.gml
+Converted description /// @description Declare Variables
+
+Converting GML script: ${project_dir}\objects\obj_elevator\Create_0.gml
+Converted description /// @description Movement variables
+
+Converting GML script: ${project_dir}\objects\obj_elevator\Step_0.gml
+Converted description /// @description Object y motion and Particle position -- Increase fadeout Once touched
+
+Converting GML script: ${project_dir}\objects\obj_checkpoint\Collision_dd7a55b7-d4fd-4a17-a56d-ab10253eb86a.gml
+Converted builtin - line 9: background_x[0] -> __background_get( e__BG.X, 0 )
+Converted builtin - line 10: background_x[1] -> __background_get( e__BG.X, 1 )
+Converted builtin - line 11: background_x[2] -> __background_get( e__BG.X, 2 )
+Converted description /// @description Update checkpoint on collide with obj_checkpoint
+
+Converting GML script: ${project_dir}\objects\obj_finish_line\Create_0.gml
+Converted description /// @description Variable Declaration
+
+Converting GML script: ${project_dir}\objects\obj_finish_line\Step_0.gml
+Converted description /// @description Object y motion and Particle position -- Increase fadeout Once touched
+
+Converting GML script: ${project_dir}\objects\obj_finish_line\Draw_64.gml
+Converted description /// @description Draw fade out box
+
+Converting GML script: ${project_dir}\objects\obj_pizza\Create_0.gml
+Converted description /// @description Create 'touched' variable + movement
+
+Converting GML script: ${project_dir}\objects\obj_pizza\Step_0.gml
+Converted description /// @description Destroy object once the plus one animation finishes
+
+Converting GML script: ${project_dir}\objects\obj_pizza\Collision_491972e4-5eca-4719-b9b9-82af7436d414.gml
+Converted description /// @description Change to Plus One on collide with player only once -- Add 1 sec to Player Time -- Add score
+
+Converting GML script: ${project_dir}\objects\obj_life\Create_0.gml
+Converted description /// @description Movement variables
+
+Converting GML script: ${project_dir}\objects\obj_life\Step_0.gml
+Converted description /// @description Object y motion and Particle position -- Increase fadeout Once touched
+
+Converting GML script: ${project_dir}\objects\obj_life\Collision_c6086746-c921-4018-9001-b3750bde3706.gml
+Converted description /// @description Add life and points when collected
+
+Converting GML script: ${project_dir}\objects\obj_menu_nate\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_menu_jesse\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_menu_nick\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_menu_matt\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_menu_mike\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_walker\Create_0.gml
+Converted description /// @description Create Variables
+
+Converting GML script: ${project_dir}\objects\obj_walker\Step_0.gml
+Converted description /// @description Animation and Player Interaction
+
+Converting GML script: ${project_dir}\objects\obj_jumper\Create_0.gml
+Converted description /// @description Create Variables
+
+Converting GML script: ${project_dir}\objects\obj_jumper\Alarm_2.gml
+Converted description /// @description Jump on alarm and reset random range of time
+
+Converting GML script: ${project_dir}\objects\obj_jumper\Step_0.gml
+Converted description /// @description Movement
+
+Converting GML script: ${project_dir}\objects\obj_runner\Create_0.gml
+Converted description /// @description Create Variables
+
+Converting GML script: ${project_dir}\objects\obj_runner\Alarm_2.gml
+Converted description /// @description Change Runner back to Run Sprite and !Flat
+
+Converting GML script: ${project_dir}\objects\obj_runner\Alarm_0.gml
+Converted description /// @description Flash Sprite If Flattened
+
+Converting GML script: ${project_dir}\objects\obj_runner\Step_0.gml
+Converted description /// @description Movement
+
+Converting GML script: ${project_dir}\objects\obj_title_screen_controller\Create_0.gml
+Converted builtin - line 14: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 15: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_yview = 112 -> __view_set( e__VW.YView, 0, 112 )
+Converted builtin - line 14: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 10: view_wview = obj_display_manager.ideal_width -> __view_set( e__VW.WView, 0, obj_display_manager.ideal_width )
+Converted builtin - line 15: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 11: view_hview = obj_display_manager.ideal_height -> __view_set( e__VW.HView, 0, obj_display_manager.ideal_height )
+Converted description /// @description Variables
+Converted string - line 27: 'Y' -> "Y"
+Converted string - line 30: 'B' -> "B"
+Converted string - line 33: 'M' -> "M"
+Converted string - line 36: 'H' -> "H"
+Converted string - line 37: 'G' -> "G"
+Converted builtin - line 14: view_xview = clamp(__view_get( e__VW.XView, 0 ), 0, room_width-__view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ), 0, room_width-__view_get( e__VW.WView, 0 )) )
+Converted builtin - line 15: view_yview = clamp(__view_get( e__VW.YView, 0 ), 0, room_height-__view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 ), 0, room_height-__view_get( e__VW.HView, 0 )) )
+
+Converting GML script: ${project_dir}\objects\obj_title_screen_controller\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_title_screen_controller\Alarm_0.gml
+Converted description /// @description Allow start
+
+Converting GML script: ${project_dir}\objects\obj_title_screen_controller\Step_0.gml
+Converted description /// @description GUI Buttons
+Converted string - line 4: 'Y' -> "Y"
+Converted string - line 5: 'linktr.ee/apsisgames' -> "linktr.ee/apsisgames"
+Converted string - line 9: 'B' -> "B"
+Converted string - line 10: 'https://linktr.ee/meritpoppunk' -> "https://linktr.ee/meritpoppunk"
+Converted string - line 14: 'M' -> "M"
+Converted string - line 31: 'G' -> "G"
+Converted string - line 31: 'H' -> "H"
+
+Converting GML script: ${project_dir}\objects\obj_title_screen_controller\Draw_64.gml
+Converted description /// @description Draw GUI Buttons
+Converted string - line 10: 'Y' -> "Y"
+Converted string - line 13: 'B' -> "B"
+Converted string - line 18: 'B' -> "B"
+Converted string - line 21: 'B' -> "B"
+Converted string - line 27: 'M' -> "M"
+Converted string - line 30: 'M' -> "M"
+Converted string - line 34: 'M' -> "M"
+Converted string - line 37: 'M' -> "M"
+
+Converting GML script: ${project_dir}\objects\obj_title_screen_controller\Draw_0.gml
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Draw title logo and fade in
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Alarm_2.gml
+Converted description /// @description Allow touch - delayed after typing is completed
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_pre_intro\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro\Draw_0.gml
+Converted description /// @description Draw typewriter and manager
+
+Converting GML script: ${project_dir}\objects\obj_intro_02\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_02\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_intro_02\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_02\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_02\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_02\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_03\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_03\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_intro_03\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_03\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_03\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_03\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_04\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_04\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_intro_04\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_04\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_04\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_04\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_05\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_05\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_intro_05\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_05\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_05\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_05\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_06\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_06\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_intro_06\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_06\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_06\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_06\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_07\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_07\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_intro_07\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_07\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_07\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_07\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_08\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_08\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_intro_08\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_08\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_08\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_08\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_09\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_09\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_intro_09\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_09\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_09\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_09\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_10\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_10\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_intro_10\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_10\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_10\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_10\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_11\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_11\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_intro_11\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_11\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_11\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_11\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_intro_12\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_intro_12\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_intro_12\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_intro_12\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_intro_12\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_intro_12\Draw_0.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Step_0.gml
+Converted description /// @description Transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_nate_intro\Draw_0.gml
+Converted description /// @description Draw typewriter text and character to screen
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Step_0.gml
+Converted description /// @description Transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_matt_intro\Draw_0.gml
+Converted description /// @description Draw typewriter text and character to screen
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Step_0.gml
+Converted description /// @description Transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_nick_intro\Draw_0.gml
+Converted description /// @description Draw typewriter text and character to screen
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Step_0.gml
+Converted description /// @description Transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_jesse_intro\Draw_0.gml
+Converted description /// @description Draw typewriter text and character to screen
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Step_0.gml
+Converted description /// @description Transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_mike_intro\Draw_0.gml
+Converted description /// @description Draw typewriter text and character to screen
+
+Converting GML script: ${project_dir}\objects\obj_level_01_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_level_01_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_level_01_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_level_01_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_level_01_intro\Step_0.gml
+Converted description /// @description Transition when the character runs across screen
+
+Converting GML script: ${project_dir}\objects\obj_level_01_intro\Draw_64.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_level_02_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_level_02_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_level_02_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_level_02_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_level_02_intro\Step_0.gml
+Converted description /// @description Transition when the character runs across screen
+
+Converting GML script: ${project_dir}\objects\obj_level_02_intro\Draw_64.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_level_03_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_level_03_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_level_03_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_level_03_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_level_03_intro\Step_0.gml
+Converted description /// @description Transition when the character runs across screen
+
+Converting GML script: ${project_dir}\objects\obj_level_03_intro\Draw_64.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_level_04_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_level_04_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_level_04_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_level_04_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_level_04_intro\Step_0.gml
+Converted description /// @description Transition when the character runs across screen
+
+Converting GML script: ${project_dir}\objects\obj_level_04_intro\Draw_64.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_level_05_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_level_05_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_level_05_intro\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_level_05_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_level_05_intro\Step_0.gml
+Converted description /// @description Transition when the character runs across screen
+
+Converting GML script: ${project_dir}\objects\obj_level_05_intro\Draw_64.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_concert_intro\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_concert_intro\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_concert_intro\Alarm_0.gml
+Converted description /// @description Add each character to write during alarms
+
+Converting GML script: ${project_dir}\objects\obj_concert_intro\Step_0.gml
+Converted description /// @description Transition when the character runs across screen
+
+Converting GML script: ${project_dir}\objects\obj_concert_intro\Draw_64.gml
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Create_0.gml
+Converted builtin - line 6: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Variable Declaration
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Alarm_3.gml
+Converted description /// @description Start Fadeout
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Alarm_2.gml
+Converted description /// @description Fade Out Rectangle -- Fade Out Volume
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Alarm_1.gml
+Converted description /// @description Fade In The End
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Alarm_0.gml
+Converted description /// @description Curtain Call At End Of Ripe
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Step_0.gml
+Converted description /// @description Lower Curtains After Song Ends (alarm[0]) -- Transition When Done/// @param alarm[0]
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_ending_controller\Draw_0.gml
+Converted builtin - line 3: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 12: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 3: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 12: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 3: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 12: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Merit Logo and Curtains
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Create_0.gml
+Converted description /// @description Setting up typewriter text variables
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Alarm_4.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Alarm_2.gml
+Converted description /// @description Allow touch - delayed after typing is completed
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Alarm_1.gml
+Converted description /// @description Add level score after delay
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Alarm_0.gml
+Converted description /// @description Draw Top Text
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Step_0.gml
+Converted description /// @description Start transition on touch
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Draw_64.gml
+Converted description /// @description Draw fade out rectangle for transition
+
+Converting GML script: ${project_dir}\objects\obj_score_screen\Draw_0.gml
+Converted description /// @description Draw text and sprite to score screen
+
+Converting GML script: ${project_dir}\objects\obj_game_over\Create_0.gml
+Converted description /// @description Variables
+
+Converting GML script: ${project_dir}\objects\obj_game_over\Alarm_3.gml
+Converted description /// @description Fade in rectangle
+
+Converting GML script: ${project_dir}\objects\obj_game_over\Alarm_1.gml
+Converted description /// @description Start fade transition and change room once faded
+
+Converting GML script: ${project_dir}\objects\obj_game_over\Step_0.gml
+Converted description /// @description Transition on click
+
+Converting GML script: ${project_dir}\objects\obj_game_over\Draw_64.gml
+Converted description /// @description Draw text to screen
+
+Converting GML script: ${project_dir}\objects\obj_mike_play\Create_0.gml
+Converted description /// @description Create Variables
+
+Converting GML script: ${project_dir}\objects\obj_mike_play\Step_0.gml
+Converted description /// @description Movement
+
+Converting GML script: ${project_dir}\objects\obj_fireworks\Create_0.gml
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted description /// @description Particle System
+
+Converting GML script: ${project_dir}\objects\obj_credits\Create_0.gml
+Converted description /// @description Credit Variables
+
+Converting GML script: ${project_dir}\objects\obj_credits\Alarm_2.gml
+Converted description /// @description Fade Last Credit Line
+
+Converting GML script: ${project_dir}\objects\obj_credits\Alarm_1.gml
+Converted description /// @description Advance Credit Line and Reset Typing
+
+Converting GML script: ${project_dir}\objects\obj_credits\Alarm_0.gml
+Converted description /// @description Typewriter actions
+
+Converting GML script: ${project_dir}\objects\obj_credits\Draw_0.gml
+Converted builtin - line 8: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 8: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 8: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw typewriter text to screen
+
+Converting GML script: ${project_dir}\objects\obj_staff_01\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_staff_02\Create_0.gml
+Converted description /// @description Image speed and randomize starting animation frame
+
+Converting GML script: ${project_dir}\objects\obj_rain\Create_0.gml
+Converted builtin - line 29: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 29: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description LIGHTNING VARIABLES
+
+Converting GML script: ${project_dir}\objects\obj_rain\Alarm_1.gml
+Converted description /// @description Reset Lightning Flash
+
+Converting GML script: ${project_dir}\objects\obj_rain\Alarm_0.gml
+Converted description /// @description Randomize Lightning Flash every 3 seconds
+
+Converting GML script: ${project_dir}\objects\obj_rain\Step_1.gml
+Converted builtin - line 2: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 2: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 6: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Update Emitter Location
+
+Converting GML script: ${project_dir}\objects\obj_rain\Draw_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Draw 'dark' layer
+
+Converting GML script: ${project_dir}\objects\obj_rain_far\Create_0.gml
+Converted builtin - line 23: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 23: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Rain System
+
+Converting GML script: ${project_dir}\objects\obj_rain_far\Step_1.gml
+Converted builtin - line 6: background_x[2] -> __background_get( e__BG.X, 2 )
+Converted description /// @description Update Emitter Location
+
+Converting GML script: ${project_dir}\objects\obj_snow\Create_0.gml
+Converted description /// @description Snow System
+
+Converting GML script: ${project_dir}\objects\obj_snow\Step_0.gml
+Converted builtin - line 11: background_x[1] -> __background_get( e__BG.X, 1 )
+Converted description /// @description Update Emitter Location on death and move parallax
+
+Converting GML script: ${project_dir}\objects\obj_snow_close\Create_0.gml
+Converted description /// @description Snow System
+
+Converting GML script: ${project_dir}\objects\obj_snow_close\Step_0.gml
+Converted builtin - line 11: background_x[2] -> __background_get( e__BG.X, 2 )
+Converted description /// @description Update Emitter Location
+
+Converting GML script: ${project_dir}\objects\obj_snow_far\Create_0.gml
+Converted description /// @description Snow System
+
+Converting GML script: ${project_dir}\objects\obj_snow_far\Step_0.gml
+Converted builtin - line 12: background_x[0] -> __background_get( e__BG.X, 0 )
+Converted description /// @description Update Emitter Location
+
+Converting GML script: ${project_dir}\objects\obj_cold_layer\Draw_0.gml
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 4: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Draw 'cold' layer
+
+Converting GML script: ${project_dir}\objects\obj_snail\Create_0.gml
+Converted description /// @description Create Variables
+
+Converting GML script: ${project_dir}\objects\obj_snail\Step_0.gml
+Converted description /// @description Move if snail moves
+
+Converting GML script: ${project_dir}\objects\obj_dog\Create_0.gml
+Converted description /// @description Create Variables
+
+Converting GML script: ${project_dir}\objects\obj_dog\Alarm_0.gml
+Converted description /// @description Random chance for dog to stand/sit
+
+Converting GML script: ${project_dir}\objects\obj_dog\Step_0.gml
+Converted description /// @description Dog Movement
+
+Converting GML script: ${project_dir}\objects\obj_turtle\Create_0.gml
+Converted description /// @description Randomize turtle's direction
+
+Converting GML script: ${project_dir}\objects\obj_flower_01_hor\Create_0.gml
+Converted description /// @description Randomize starting frame of animation
+
+Converting GML script: ${project_dir}\objects\obj_flower_01_vert\Create_0.gml
+Converted description /// @description Randomize starting frame of animation
+
+Converting GML script: ${project_dir}\objects\obj_flower_02_hor\Create_0.gml
+Converted description /// @description Randomize starting frame of animation
+
+Converting GML script: ${project_dir}\objects\obj_flower_02_vert\Create_0.gml
+Converted description /// @description Randomize starting frame of animation
+
+Converting GML script: ${project_dir}\objects\obj_flower_03_hor\Create_0.gml
+Converted description /// @description Randomize starting frame of animation
+
+Converting GML script: ${project_dir}\objects\obj_flower_03_vert\Create_0.gml
+Converted description /// @description Randomize starting frame of animation
+
+Converting GML script: ${project_dir}\rooms\rm_concert\RoomCreationCode.gml
+Converted builtin - line 8: view_xview = (room_width / 2) - (view_wview / 2) -> __view_set( e__VW.XView, 0, (room_width / 2) - (view_wview / 2) )
+Converted builtin - line 9: view_yview = room_height - view_hview -> __view_set( e__VW.YView, 0, room_height - view_hview )
+Converted description /// @description Start Concert music --- Stop all other sounds
+Converted builtin - line 8: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 9: view_hview -> __view_get( e__VW.HView, 0 )
+
+Missing audiogroup for sound: 'snd_jump' - setting to default audio group
+Missing audiogroup for sound: 'snd_checkpoint' - setting to default audio group
+Missing audiogroup for sound: 'snd_pizza_pickup' - setting to default audio group
+Missing audiogroup for sound: 'snd_jumper_death' - setting to default audio group
+Missing audiogroup for sound: 'snd_player_death' - setting to default audio group
+Missing audiogroup for sound: 'snd_player_spawn' - setting to default audio group
+Missing audiogroup for sound: 'snd_runner_flat' - setting to default audio group
+Missing audiogroup for sound: 'snd_life' - setting to default audio group
+Missing audiogroup for sound: 'snd_lightning' - setting to default audio group
+Missing audiogroup for sound: 'snd_scoreBeep' - setting to default audio group
+Missing audiogroup for sound: 'snd_time_alarm' - setting to default audio group
+Missing audiogroup for sound: 'snd_pause' - setting to default audio group
+Missing audiogroup for sound: 'snd_crowd' - setting to default audio group
+Missing audiogroup for sound: 'snd_crowd_chant' - setting to default audio group
+Missing audiogroup for sound: 'snd_finish' - setting to default audio group
+Missing audiogroup for sound: 'snd_fable' - setting to default audio group
+Missing audiogroup for sound: 'snd_embrace' - setting to default audio group
+Missing audiogroup for sound: 'snd_ecto' - setting to default audio group
+Missing audiogroup for sound: 'snd_wire' - setting to default audio group
+Missing audiogroup for sound: 'snd_trashed' - setting to default audio group
+Missing audiogroup for sound: 'snd_brokeback' - setting to default audio group
+Missing audiogroup for sound: 'snd_dong' - setting to default audio group
+Missing audiogroup for sound: 'snd_ripe' - setting to default audio group
+Missing audiogroup for sound: 'snd_nah' - setting to default audio group
+Missing audiogroup for sound: 'snd_combos' - setting to default audio group
+Imported layer depths for room(s) 'rm_title_screen, rm_level_01, rm_level_02, rm_level_03, rm_level_04, rm_level_05, rm_concert' were not adequately spaced. Unless updated this will have undefined results in game.
+Game speed set to 60
+Added compatibility script 'background/__background_get.gml'
+Added compatibility script 'background/__background_get_element.gml'
+Added compatibility script 'background/__background_get_internal.gml'
+Added compatibility script 'background/__background_set.gml'
+Added compatibility script 'background/__background_set_element.gml'
+Added compatibility script 'background/__background_set_internal.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/room_set_view.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
