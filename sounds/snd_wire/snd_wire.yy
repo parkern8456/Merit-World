@@ -14,8 +14,8 @@
   "soundFile": "snd_wire",
   "duration": 0.0,
   "parent": {
-    "name": "OST",
-    "path": "folders/Sounds/OST.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_wire",
